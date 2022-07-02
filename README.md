@@ -11,3 +11,8 @@ Do not ever store keys in solution files.
 
 ### `yarn install`
 ### `npm start`
+
+### Recommendations
+- Write in typescript (.tsx or .jsx)
+- Ensure that all secrets are in Parameter Store (or similar)
+- This PoC is an interaction between the deployer wallet & smart contract, so it is recommended to put server-side. 
