@@ -102,100 +102,99 @@ function App() {
   };
 
   return (
+    <body>
     <div className="App">
-      <br></br>
-      <br></br>
-      <br></br>
-      <h3>What is this?</h3>
-      <h4>
-        This dApp will have all the necessary functions (front end) as a working
-        PoC interacting with a Token deployed on Fantom Network.
-      </h4>
-      <br />
-      <br />
-      <h3>What is this and what do I do?</h3>
-      <h4>
-        <ul>
-          <li>
-            1,000,000 $CCT is sitting in the Deployer Wallet (CryptoCrew Admin):{" "}
-            <a
-              href="https://testnet.ftmscan.com/address/0x0638fc7983fd2d356907c44581802c2d5daaca04"
-              target="_blank"
-            >
-              [View Token + Deployer]
-            </a>
-          </li>
-          <li>
-            Users will be rewarded in ERC-20 tokens on the Fantom Blockchain.
-            (Easily bridgable to BSC and ETH ;) )
-          </li>
-          <li>
-            Users will not need to connect wallets or anything for simplicity.
-            But, somewhere in App they will need a place to enter the address
-            where the rewards are paid to.
-          </li>
-          <li>
-            !!! Make sure to Add Fantom Testnet to MetaMask:{" "}
-            <a
-              target="_blank"
-              href="https://docs.fantom.foundation/tutorials/set-up-metamask"
-            >
-              [?]
-            </a>
-          </li>
-        </ul>
-      </h4>
-      <br />
-      <br />
-      <br />
-
-      <div className="dapp">
+      <div className="container-one">
         <h1>CryptoCrew Reward dApp</h1>
-        <div className="static-details">Wallet Address: {details.address}</div>
-        <br />
-        <div className="form-details">
-          <label>Enter your Wallet Address: {"    "}</label>
-          <input
-            name="address"
-            placeholder="Enter yo wallet address..."
-            onChange={(e) =>
-              setDetails({ ...details, address: e.target.value })
-            }
-            disabled={loading}
-          ></input>
-        </div>
-
-        <br />
-        <br />
-        <div className="upload-video">
-          <h4>Upload a video to earn 10 $CCT</h4>
-          <button onClick={() => uploadVideo()} disabled={loading}>
-            Upload a video...
-          </button>
-        </div>
-
-        <div className="upload-video">
-          <h4>
-            refer someone to get 5 $CCT (make sure you Upload a video first to
-            get some tokens)
-          </h4>
-          <label>Enter Referrals Wallet Address: {"    "}</label>
-          <input
-            name="referAddress"
-            placeholder="Enter the referrals Wallet Address"
-            onChange={(e) =>
-              setReferDetails({ ...referDetails, address: e.target.value })
-            }
-            disabled={loading}
-          ></input>
-          <br />
-          <br />
-          <button onClick={() => refer()} disabled={loading}>
-            Refer a Friend
-          </button>
-        </div>
+        <h3>What is this?</h3>
+        <h4>
+          This dApp will have all the necessary functions (front end) as a working
+          PoC interacting with a Token deployed on Fantom Network.
+        </h4>
       </div>
+      <div className="container-two">
+        <h5>What is this and what do I do?</h5>
+        <h6>
+          <ul>
+            <li>
+              1,000,000 $CCT is sitting in the Deployer Wallet (CryptoCrew Admin):{" "}
+              <a
+                href="https://testnet.ftmscan.com/address/0x0638fc7983fd2d356907c44581802c2d5daaca04"
+                target="_blank"
+              >
+                [View Token + Deployer]
+              </a>
+            </li>
+            <li>
+              Users will be rewarded in ERC-20 tokens on the Fantom Blockchain.
+              (Easily bridgable to BSC and ETH ;) )
+            </li>
+            <li>
+              Users will not need to connect wallets or anything for simplicity.
+              But, somewhere in App they will need a place to enter the address
+              where the rewards are paid to.
+            </li>
+            <li>
+              !!! Make sure to Add Fantom Testnet to MetaMask:{" "}
+              <a
+                target="_blank"
+                href="https://docs.fantom.foundation/tutorials/set-up-metamask"
+              >
+                [?]
+              </a>
+            </li>
+          </ul>
+        </h6>
+      </div>
+      <div className="container-three">
+        <div className="dapp">
+          <h7>CryptoCrew Reward dApp</h7>
+          <div className="static-details">Wallet Address {details.address}</div>
+          <div className="form-details">
+            <label>Enter your Wallet Address: {"    "}</label>
+            <br></br>
+            <input
+              name="address"
+              placeholder="Enter yo wallet address..."
+              onChange={(e) =>
+                setDetails({ ...details, address: e.target.value })
+              }
+              disabled={loading}
+            ></input>
+            <hr></hr>
+          </div>
+          <div className="upload-video">
+            <h8>Upload a video to earn 10 $CCT</h8>
+            <br></br>
+            <button id="video-btn" onClick={() => uploadVideo()} disabled={loading}>
+              Upload a video...
+            </button>
+          </div>
+          <hr></hr>
+          <div className="upload-video">
+            <h9>
+              refer someone to get 5 $CCT (make sure you Upload a video first to
+              get some tokens)
+            </h9>
+            <label>Enter Referrals Wallet Address: {"    "}</label>
+            <br></br>
+            <input
+              name="referAddress"
+              placeholder="Enter the referrals Wallet Address"
+              onChange={(e) =>
+                setReferDetails({ ...referDetails, address: e.target.value })
+              }
+              disabled={loading}
+            ></input>
+            <br></br>
+            <button id="refer-btn" onClick={() => refer()} disabled={loading}>
+              Refer a Friend
+            </button>
+          </div>
+        </div>
+      </div>  
     </div>
+    </body>
   );
 }
 
