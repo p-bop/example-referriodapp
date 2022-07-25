@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #FFB085;
 }
 
 .App-logo {
@@ -28,20 +29,8 @@
   color: #61dafb;
 }
 
-.App {
-  margin: 50px 150px 150px 50px;
-}
-
-.dapp {
-  background-color:aliceblue;
-}
-
-.form-details, .upload-video {
-  border: 1px solid gray;
-}
-
 .upload-video {
-  margin: 20px
+  margin: 10px
 }
 
 @keyframes App-logo-spin {
@@ -51,4 +40,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: #FFB085;
+}
+
+.container-one {
+  background: linear-gradient(#FFB085, #FEF1E6);
+  padding: 75px;
+}
+
+.container-two {
+  padding: 75px;
+  background: linear-gradient(#FEF1E6, #FEF1E6);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-three {
+  padding: 75px;
+  background: linear-gradient(#FEF1E6, #FFB085);
+}
+
+.dapp {
+  background-color: #7d3cff, 1;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 5px;
+}
+
+ul {
+  list-style-type: '✔️ ';
+}
+
+h1 {
+  color: #835151;
+  font-size: 5rem;
+  margin: 50px auto 50px auto;
+  font-family: 'Sacramento', sans-serif;
+}
+
+h3 {
+  color: #90AACB;
+  font-size: 2.65rem;
+  margin: 10px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+h5 {
+  color: #90AACB;
+  text-align: left;
+  font-size: 1.4rem;
+  margin: 10px;
+  font-weight: bold;
+}
+
+h6 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h7 {
+  color: #835151;
+  font-size: 1.5rem;
+  font-family: 'Sacramento', sans-serif;
+  font-weight: bold;
+}
+
+#video-btn {
+  background-color: white;
+  border-radius: 6px;
+}
+
+#video-btn:hover {
+  background: #FFF2F2;
+}
+
+#refer-btn {
+  background-color: white;
+  border-radius: 6px;
+}
+
+#refer-btn:hover {
+  background: #FFF2F2;
+}
+
+.static-details {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.form-details {
+  padding: 10px;
+}
+
+.upload-video {
+  padding: 10px;
+}
+
+hr {
+  height: 1px;
+  background-color: #000000;
+  border: none;
 }
